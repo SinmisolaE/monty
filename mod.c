@@ -10,6 +10,7 @@ void st_mod(stack_t **head, unsigned int count)
 {
 	stack_t *cur;
 	int len = 0;
+	int save;
 
 	cur = *head;
 
@@ -35,7 +36,8 @@ void st_mod(stack_t **head, unsigned int count)
 		stack_free(*head);
 		exit(EXIT_FAILURE);
 	}
-	cur->next->n = cur->next->n % cur->n;
+	save = cur->next->n % cur->n;
+	cur->next->n = save;
 	*head = cur->next;
 	free(cur);
 }

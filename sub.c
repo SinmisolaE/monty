@@ -9,7 +9,7 @@
 void st_sub(stack_t **head, unsigned int count)
 {
 	stack_t *cur;
-	int len = 0;
+	int len = 0, save;
 
 	cur = *head;
 
@@ -27,7 +27,8 @@ void st_sub(stack_t **head, unsigned int count)
 		exit(EXIT_FAILURE);
 	}
 	cur = *head;
-	cur->next->n = cur->next->n - cur->n;
+	save = cur->next->n - cur->n;
+	cur->next->n = save;
 	*head = cur->next;
 	free(cur);
 }
