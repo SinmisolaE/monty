@@ -20,7 +20,7 @@ void st_sub(stack_t **head, unsigned int count)
 	}
 	if (len < 2)
 	{
-		fprintf(stderr, "L%d: can't sub, stack too short", count);
+		fprintf(stderr, "L%d: can't sub, stack too short\n", count);
 		fclose(bus.file);
 		free(bus.line);
 		stack_free(*head);
