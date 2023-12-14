@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * f_pint - prints the top
+ * st_pint - prints the top
  * @head: the head of the stack
  * @count: line number
  * Return: nain

@@ -24,7 +24,7 @@ void add_queue(stack_t **head, int n)
 		*head = new;
 	}
 	else
-	{	
+	{
 		cur = *head;
 		while (cur->next)
 			cur = cur->next;

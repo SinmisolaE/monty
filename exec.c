@@ -44,6 +44,6 @@ int exec(char *line, stack_t **stack, unsigned int count, FILE *file)
 		free(line);
 		stack_free(*stack);
 		exit(EXIT_FAILURE);
-		return (0);
 	}
+	return (1);
 }

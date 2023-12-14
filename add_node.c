@@ -32,9 +32,9 @@ void add_node(stack_t **head, int n)
 }
 
 /**
- * print_node - prints node
+ * st_pall - prints node
  * @head: head of stack
- * @n: the value
+ * @count: the line number
  */
 void st_pall(stack_t **head, unsigned int count)
 {

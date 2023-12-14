@@ -12,8 +12,8 @@ int main(int argc, char **argv)
 	stack_t *stack = NULL;
 	char *line;
 	size_t size = 0;
-	unsigned int count;
-	ssize_t read;
+	unsigned int count = 0;
+	ssize_t read = 1;
 
 	FILE *file;
 
@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 		fprintf(stderr, "Usage:monty file\n");
 		exit(EXIT_FAILURE);
 	}
-	
+
 	file = fopen(argv[1], "r");
 	bus.file = file;
 
