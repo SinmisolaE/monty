@@ -17,7 +17,13 @@ int exec(char *line, stack_t **stack, unsigned int count, FILE *file)
 				{"pop", st_pop},
 				{"swap", st_swap},
 				{"add", st_add},
-				{"nop", st_nop}
+				{"nop", st_nop},
+				{"sub", st_sub},
+				{"div", st_div},
+				{"mul", st_mul},
+				{"mod", st_mod},
+				{"pchar", st_pchar},
+				{"pstr", st_pstr}
 				};
 
 	unsigned int i = 0;

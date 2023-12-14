@@ -68,4 +68,10 @@ void st_add(stack_t **head, unsigned int count);
 void st_nop(stack_t **head, unsigned int count);
 void st_pop(stack_t **head, unsigned int count);
 void st_pint(stack_t **head, unsigned int count);
+void st_sub(stack_t **head, unsigned int count);
+void st_div(stack_t **head, unsigned int count);
+void st_mul(stack_t **head, unsigned int count);
+void st_mod(stack_t **head, unsigned int count);
+void st_pchar(stack_t **head, unsigned int count);
+void st_pstr(stack_t **head, unsigned int count);
 #endif
