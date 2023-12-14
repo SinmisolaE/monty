@@ -62,4 +62,9 @@ void f_queue(stack_t **head, unsigned int count);
 void add_queue(stack_t **head, int n);
 int exec(char *line, stack_t **stack, unsigned int count, FILE *file);
 void stack_free(stack_t *head);
+void st_swap(stack_t **head, unsigned int count);
+void st_add(stack_t **head, unsigned int count);
+void st_nop(stack_t **head, unsigned int count);
+void st_pop(stack_t **head, unsigned int count);
+void st_pint(stack_t **head, unsigned int count);
 #endif

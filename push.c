@@ -16,7 +16,7 @@ void st_push(stack_t **head, unsigned int count)
 			x++;
 		for (; bus.arg[x] != '\0'; x++)
 		{
-			if (bus.arg[x] > 57 || bus.arg[x] < 47)
+			if (bus.arg[x] > 57 || bus.arg[x] < 48)
 				flag = 1;
 		}
 		if (flag == 1)
@@ -37,7 +37,7 @@ void st_push(stack_t **head, unsigned int count)
 		exit(EXIT_FAILURE);
 	}
 	n = atoi(bus.arg);
-	if (bus.change = 0)
+	if (bus.change == 0)
 		add_node(head, n);
 	else
 		add_queue(head, n);

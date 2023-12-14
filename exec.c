@@ -12,7 +12,12 @@ int exec(char *line, stack_t **stack, unsigned int count, FILE *file)
 {
 	instruction_t opst[] = {
 				{"push", st_push},
-				{"pall", st_pall}
+				{"pall", st_pall},
+				{"pint", st_pint},
+				{"pop", st_pop},
+				{"swap", st_swap},
+				{"add", st_add},
+				{"nop", st_nop}
 				};
 
 	unsigned int i = 0;
