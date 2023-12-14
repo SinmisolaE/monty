@@ -23,7 +23,9 @@ int exec(char *line, stack_t **stack, unsigned int count, FILE *file)
 				{"mul", st_mul},
 				{"mod", st_mod},
 				{"pchar", st_pchar},
-				{"pstr", st_pstr}
+				{"pstr", st_pstr},
+				{"queue", f_queue},
+				{NULL, NULL}
 				};
 
 	unsigned int i = 0;
