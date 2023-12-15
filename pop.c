@@ -12,7 +12,7 @@ void st_pop(stack_t **head, unsigned int count)
 
 	if (!(*head))
 	{
-		fprintf(stderr, "L%d: can't pop an empty stack", count);
+		fprintf(stderr, "L%d: can't pop an empty stack\n", count);
 		fclose(bus.file);
 		free(bus.line);
 		stack_free(*head);
