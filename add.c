@@ -27,7 +27,7 @@ void st_add(stack_t **head, unsigned int count)
 		exit(EXIT_FAILURE);
 	}
 	cur = *head;
-	save = cur->n + cur->next->n;
+	save = (cur->n) + (cur->next->n);
 	cur->next->n = save;
 	*head = cur->next;
 	free(cur);
