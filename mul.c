@@ -21,7 +21,7 @@ void st_mul(stack_t **head, unsigned int count)
 
 	if (len < 2)
 	{
-		fprintf(stderr, "L%d: can't mul, stack too short", count);
+		fprintf(stderr, "L%d: can't mul, stack too short\n", count);
 		fclose(bus.file);
 		free(bus.line);
 		stack_free(*head);
