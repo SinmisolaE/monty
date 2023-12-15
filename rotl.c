@@ -13,11 +13,13 @@ void rotl(stack_t **head, unsigned int count)
 
 	(void)count;
 	cur = *head;
-	save = (*head)->next;
-	save->prev = NULL;
 
-	if (*head == NULL || (*head)->next == NULL)
+	if (!(*head) || !((*head)->nex))
 		return;
+
+	save = (*head)->next;
+        save->prev = NULL;
+
 	while (cur->next)
 	{
 		cur = cur->next;
