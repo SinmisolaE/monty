@@ -3,7 +3,7 @@
 /**
  * st_mod - modulus of top two elem
  * @head: head of stack
- * count: line number
+ * @count: line number
  * Return: nain
  */
 void st_mod(stack_t **head, unsigned int count)
