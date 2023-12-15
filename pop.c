@@ -20,6 +20,7 @@ void st_pop(stack_t **head, unsigned int count)
 	}
 	cur = *head;
 	*head = cur->next;
-	(*head)->prev = NULL;
+	if (*head)
+		(*head)->prev = NULL;
 	free(cur);
 }
