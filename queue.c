@@ -14,13 +14,14 @@ void add_queue(stack_t **head, int n)
 	new = malloc(sizeof(stack_t));
 	if (!new)
 	{
-		fprintf(stderr, "Error\n");
+		printf("Error: malloc failed\n");
 		exit(EXIT_FAILURE);
 	}
 	new->n = n;
 	if (!(*head))
 	{
 		new->next = NULL;
+		new->prev = NULL;
 		*head = new;
 	}
 	else

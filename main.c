@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 	char *line;
 	size_t size = 0;
 	unsigned int count = 0;
-	ssize_t read = 1;
+	ssize_t reading = 1;
 
 	FILE *file;
 
@@ -32,13 +32,13 @@ int main(int argc, char **argv)
 		exit(EXIT_FAILURE);
 	}
 
-	while (read > 0)
+	while (reading > 0)
 	{
 		line = NULL;
-		read = getline(&line, &size, file);
+		reading = getline(&line, &size, file);
 		bus.line = line;
 		count++;
-		if (read > 0)
+		if (reading > 0)
 			exec(line, &stack, count, file);
 		free(line);
 	}

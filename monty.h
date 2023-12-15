@@ -74,4 +74,8 @@ void st_mul(stack_t **head, unsigned int count);
 void st_mod(stack_t **head, unsigned int count);
 void st_pchar(stack_t **head, unsigned int count);
 void st_pstr(stack_t **head, unsigned int count);
+void rotl(stack_t **head, unsigned int count);
+void rotr(stack_t **head, unsigned int count);
+void st_stack(stack_t **head, unsigned int count);
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 #endif

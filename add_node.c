@@ -14,10 +14,11 @@ void add_node(stack_t **head, int n)
 	new = malloc(sizeof(stack_t));
 	if (!new)
 	{
-		fprintf(stderr, "Error: malloc failed");
+		printf("Error: malloc failed\n");
 		exit(EXIT_FAILURE);
 	}
 	new->n = n;
+	new->prev = NULL;
 	if (!(*head))
 	{
 		new->next = NULL;
@@ -42,6 +43,9 @@ void st_pall(stack_t **head, unsigned int count)
 	(void)count;
 
 	cur = *head;
+
+	if (!cur)
+		return;
 
 	while (cur)
 	{

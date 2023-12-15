@@ -11,23 +11,19 @@
 int exec(char *line, stack_t **stack, unsigned int count, FILE *file)
 {
 	instruction_t opst[] = {
-				{"push", st_push},
-				{"pall", st_pall},
-				{"pint", st_pint},
-				{"pop", st_pop},
-				{"swap", st_swap},
-				{"add", st_add},
-				{"nop", st_nop},
-				{"sub", st_sub},
-				{"div", st_div},
-				{"mul", st_mul},
-				{"mod", st_mod},
+				{"push", st_push}, {"pall", st_pall}, {"pint", st_pint},
+				{"pop", st_pop}, {"swap", st_swap},
+				{"add", st_add}, {"nop", st_nop},
+				{"sub", st_sub}, {"div", st_div},
+				{"mul", st_mul}, {"mod", st_mod},
 				{"pchar", st_pchar},
 				{"pstr", st_pstr},
+				{"rotl", rotl},
+				{"rotr", rotr},
+				{"stack", st_stack},
 				{"queue", f_queue},
 				{NULL, NULL}
 				};
-
 	unsigned int i = 0;
 	char *op;
 	char *del = " \t\n";

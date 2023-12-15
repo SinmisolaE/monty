@@ -20,7 +20,7 @@ void st_pchar(stack_t **head, unsigned int count)
 		stack_free(*head);
 		exit(EXIT_FAILURE);
 	}
-	if (cur->n > 127 || cur->n < 0)
+	if ((cur->n > 127) || (cur->n < 0))
 	{
 		fprintf(stderr, "L%d: can't pchar, value out of range\n", count);
 		fclose(bus.file);
