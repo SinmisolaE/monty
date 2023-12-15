@@ -23,7 +23,7 @@ void rotl(stack_t **head, unsigned int count)
 		cur = cur->next;
 	}
 	cur->next = *head;
-	(*head)->prev = cur;
-	(*head)->next = NULL;
+	cur->next->prev = cur;
+	cur->cur->next = NULL;
 	*head = save;
 }
