@@ -16,14 +16,14 @@ void rotl(stack_t **head, unsigned int count)
 	save = (*head)->next;
 	save->prev = NULL;
 
-	if (!(*head) || !((*head)->next))
+	if (*head == NULL || (*head)->next == NULL)
 		return;
 	while (cur->next)
 	{
 		cur = cur->next;
 	}
 	cur->next = *head;
-	cur->next->prev = cur;
-	cur->cur->next = NULL;
+	(*head)->prev = cur;
+	(*head)->next = NULL;
 	*head = save;
 }
