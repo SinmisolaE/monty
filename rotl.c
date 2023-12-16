@@ -14,7 +14,7 @@ void rotl(stack_t **head, unsigned int count)
 	(void)count;
 	cur = *head;
 
-	if (!(*head) || !((*head)->nex))
+	if (!(*head) || !((*head)->next))
 		return;
 
 	save = (*head)->next;
